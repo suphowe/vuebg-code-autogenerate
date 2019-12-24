@@ -1,19 +1,20 @@
-package com.louis.kitty.generator.vo;
+package com.vuebg.generator.model;
+
+import com.vuebg.generator.params.ConnParam;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.louis.kitty.dbms.vo.ConnParam;
 
 /**
  * 代码生成数据模型
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class GenerateModel {
 
 	private String outPutFolderPath;
-	private String basePackage = "com.louis.output";
+	private String basePackage = "com.vuebg.output";
 	private ConnParam connParam;
 	private List<TableModel> tableModels = new ArrayList<>();
 	

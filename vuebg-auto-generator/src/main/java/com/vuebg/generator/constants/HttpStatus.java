@@ -1,11 +1,11 @@
-package com.louis.kitty.common.constants;
+package com.vuebg.generator.constants;
 
 /**
  * Constants enumerating the HTTP status codes.
  * All status codes defined in RFC1945 (HTTP/1.0), RFC2616 (HTTP/1.1), and
  * RFC2518 (WebDAV) are listed.
  *
- * @see StatusLine
+ * @see
  *
  * @since 4.0
  */

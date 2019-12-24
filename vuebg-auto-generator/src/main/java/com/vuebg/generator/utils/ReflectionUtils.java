@@ -1,12 +1,12 @@
-package com.louis.kitty.common.utils;
+package com.vuebg.generator.utils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
  * 反射相关辅助方法
- * @author Louis
- * @date Aug 19, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class ReflectionUtils {
 

@@ -1,4 +1,4 @@
-package com.louis.kitty.generator.config;
+package com.vuebg.generator.config;
 
 import javax.sql.DataSource;
 
@@ -12,11 +12,11 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 /**
  * Mybatis配置
- * @author Louis
- * @date Oct 29, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 @Configuration
-@MapperScan("com.louis.**.dao")	// 扫描DAO
+@MapperScan("com.vuebg.**.dao")	// 扫描DAO
 public class MybatisConfig {
   @Autowired
   private DataSource dataSource;
@@ -25,7 +25,7 @@ public class MybatisConfig {
   public SqlSessionFactory sqlSessionFactory() throws Exception {
     SqlSessionFactoryBean sessionFactory = new SqlSessionFactoryBean();
     sessionFactory.setDataSource(dataSource);
-    sessionFactory.setTypeAliasesPackage("com.louis.**.model");	// 扫描Model
+    sessionFactory.setTypeAliasesPackage("com.vuebg.**.model");	// 扫描Model
     
 	PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 	sessionFactory.setMapperLocations(resolver.getResources("classpath*:**/sqlmap/*.xml"));	// 扫描映射文件

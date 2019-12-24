@@ -1,14 +1,15 @@
-package com.louis.kitty.dbms.dao.sql;
+package com.vuebg.generator.dao.sql;
 
-import com.louis.kitty.dbms.converter.CommonMetaDataConverter;
-import com.louis.kitty.dbms.converter.MySQL5MetaDataConverter;
-import com.louis.kitty.dbms.converter.OracleMetaDataConverter;
-import com.louis.kitty.dbms.dao.IMetaDataConverter;
+
+import com.vuebg.generator.converter.CommonMetaDataConverter;
+import com.vuebg.generator.converter.MySQLMetaDataConverter;
+import com.vuebg.generator.converter.OracleMetaDataConverter;
+import com.vuebg.generator.dao.IMetaDataConverter;
 
 /**
  * 数据库查询语句文件
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public enum DatabaseType {
 
@@ -34,7 +35,7 @@ public enum DatabaseType {
 
 		@Override
 		public IMetaDataConverter getConverter() {
-			return MySQL5MetaDataConverter.getInstance();
+			return MySQLMetaDataConverter.getInstance();
 		}
 	}, 
 	

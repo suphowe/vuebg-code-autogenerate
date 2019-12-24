@@ -1,4 +1,4 @@
-package com.louis.kitty.generator.config;
+package com.vuebg.generator.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -6,8 +6,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * 跨域配置
- * @author Louis
- * @date Nov 9, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 @Configuration
 public class CorsConfig implements WebMvcConfigurer {

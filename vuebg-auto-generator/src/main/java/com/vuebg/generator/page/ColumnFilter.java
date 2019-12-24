@@ -1,9 +1,9 @@
-package com.louis.kitty.core.page;
+package com.vuebg.generator.page;
 
 /**
  * 分页查询列过滤器
- * @author Louis
- * @date Aug 19, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class ColumnFilter {
 

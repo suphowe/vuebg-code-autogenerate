@@ -1,15 +1,16 @@
-package com.louis.kitty.dbms.dao;
+package com.vuebg.generator.dao;
 
-import com.louis.kitty.dbms.constants.DBMSConstants;
-import com.louis.kitty.dbms.dao.impl.CommonDatabaseDAOImpl;
-import com.louis.kitty.dbms.dao.impl.MySql5DatabaseDAO;
-import com.louis.kitty.dbms.dao.sql.DatabaseType;
-import com.louis.kitty.dbms.vo.ConnParam;
+
+import com.vuebg.generator.constants.DBMSConstants;
+import com.vuebg.generator.dao.impl.CommonDatabaseDAOImpl;
+import com.vuebg.generator.dao.impl.MySql5DatabaseDAO;
+import com.vuebg.generator.dao.sql.DatabaseType;
+import com.vuebg.generator.params.ConnParam;
 
 /**
  * 查询器生成工厂
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class DatabaseDAOFactory {
 

@@ -1,9 +1,9 @@
-package com.louis.kitty.dbms.model;
+package com.vuebg.generator.model;
 
 /**
  * 主键
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class PrimaryKey {
 

@@ -1,9 +1,9 @@
-package com.louis.kitty.dbms.constants;
+package com.vuebg.generator.constants;
 
 /**
  * 公共常量
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public interface CommonConstants {
 

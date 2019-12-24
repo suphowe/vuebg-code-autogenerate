@@ -1,12 +1,12 @@
-package com.louis.kitty.generator.vo;
+package com.vuebg.generator.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * 代码生成模型-表
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class TableModel {
 

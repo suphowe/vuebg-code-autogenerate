@@ -1,11 +1,11 @@
-package com.louis.kitty.dbms.vo;
+package com.vuebg.generator.params;
 
 import java.io.Serializable;
 
 /**
  * 数据库连接参数封装
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class ConnParam implements Serializable {
 

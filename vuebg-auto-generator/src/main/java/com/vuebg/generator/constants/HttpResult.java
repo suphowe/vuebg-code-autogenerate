@@ -1,9 +1,9 @@
-package com.louis.kitty.core.http;
+package com.vuebg.generator.constants;
 
 /**
  * HTTP结果封装
- * @author Louis
- * @date Oct 29, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class HttpResult {
 

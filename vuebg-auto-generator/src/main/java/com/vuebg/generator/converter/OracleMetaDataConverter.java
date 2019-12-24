@@ -1,15 +1,15 @@
-package com.louis.kitty.dbms.converter;
+package com.vuebg.generator.converter;
 
 import java.util.Map;
 
-import com.louis.kitty.dbms.dao.IMetaDataConverter;
-import com.louis.kitty.dbms.model.Column;
-import com.louis.kitty.dbms.model.Index;
+import com.vuebg.generator.dao.IMetaDataConverter;
+import com.vuebg.generator.model.Column;
+import com.vuebg.generator.model.Index;
 
 /**
  * 元数据转换器
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class OracleMetaDataConverter extends CommonMetaDataConverter {
 

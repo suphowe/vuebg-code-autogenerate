@@ -1,18 +1,14 @@
-package com.louis.kitty.dbms.dao;
+package com.vuebg.generator.dao;
+
+import com.vuebg.generator.model.*;
 
 import java.util.Map;
 
-import com.louis.kitty.dbms.model.Column;
-import com.louis.kitty.dbms.model.ForeignKey;
-import com.louis.kitty.dbms.model.Index;
-import com.louis.kitty.dbms.model.PrimaryKey;
-import com.louis.kitty.dbms.model.Table;
-import com.louis.kitty.dbms.model.Trigger;
 
 /**
  * 元数据转换器接口
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public interface IMetaDataConverter {
 

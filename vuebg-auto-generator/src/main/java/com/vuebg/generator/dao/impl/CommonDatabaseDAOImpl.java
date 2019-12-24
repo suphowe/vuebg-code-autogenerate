@@ -1,4 +1,4 @@
-package com.louis.kitty.dbms.dao.impl;
+package com.vuebg.generator.dao.impl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -6,18 +6,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.vuebg.generator.dao.sql.DatabaseType;
+import com.vuebg.generator.exceptions.DAOException;
+import com.vuebg.generator.params.ConnParam;
+import com.vuebg.generator.utils.Dom4jUtils;
 import org.dom4j.Document;
 import org.dom4j.Element;
 
-import com.louis.kitty.dbms.dao.sql.DatabaseType;
-import com.louis.kitty.dbms.exception.DAOException;
-import com.louis.kitty.dbms.utils.Dom4jUtils;
-import com.louis.kitty.dbms.vo.ConnParam;
 
 /**
  * 通用数据库元信息查询类
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class CommonDatabaseDAOImpl extends AbstractDatabasetDAOImpl {
 

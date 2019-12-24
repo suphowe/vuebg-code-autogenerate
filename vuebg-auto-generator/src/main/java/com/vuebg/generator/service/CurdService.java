@@ -1,9 +1,9 @@
-package com.louis.kitty.core.service;
+package com.vuebg.generator.service;
+
+import com.vuebg.generator.page.PageRequest;
+import com.vuebg.generator.page.PageResult;
 
 import java.util.List;
-
-import com.louis.kitty.core.page.PageRequest;
-import com.louis.kitty.core.page.PageResult;
 
 /**
  * 通用CURD接口
@@ -26,7 +26,7 @@ public interface CurdService<T> {
 	
 	/**
 	 * 批量删除操作
-	 * @param entities
+	 * @param records
 	 */
 	int delete(List<T> records);
 	

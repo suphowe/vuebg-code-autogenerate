@@ -1,12 +1,12 @@
-package com.louis.kitty.common.utils;
+package com.vuebg.generator.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
  * 日期时间相关工具
- * @author Louis
- * @date Sep 23, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class DateTimeUtils {
 
@@ -14,7 +14,6 @@ public class DateTimeUtils {
 	
 	/**
 	 * 获取当前标准格式化日期时间
-	 * @param date
 	 * @return
 	 */
 	public static String getDateTime() {

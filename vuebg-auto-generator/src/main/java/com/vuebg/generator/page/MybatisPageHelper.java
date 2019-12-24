@@ -1,15 +1,15 @@
-package com.louis.kitty.core.page;
+package com.vuebg.generator.page;
 
 import java.util.List;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.louis.kitty.common.utils.ReflectionUtils;
+import com.vuebg.generator.utils.ReflectionUtils;
 
 /**
  * MyBatis 分页查询助手
- * @author Louis
- * @date Aug 19, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class MybatisPageHelper {
 
@@ -18,8 +18,7 @@ public class MybatisPageHelper {
 	/**
 	 * 分页查询, 约定查询方法名为 “findPage” 
 	 * @param pageRequest 分页请求
-	 * @param mapper Dao对象，MyBatis的 Mapper	
-	 * @param args 方法参数
+	 * @param mapper Dao对象，MyBatis的 Mapper
 	 * @return
 	 */
 	public static PageResult findPage(PageRequest pageRequest, Object mapper) {
@@ -48,7 +47,7 @@ public class MybatisPageHelper {
 	/**
 	 * 将分页信息封装到统一的接口
 	 * @param pageRequest 
-	 * @param page
+	 * @param pageInfo
 	 * @return
 	 */
 	private static PageResult getPageResult(PageRequest pageRequest, PageInfo<?> pageInfo) {

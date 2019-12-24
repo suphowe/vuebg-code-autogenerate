@@ -1,9 +1,9 @@
-package com.louis.kitty.dbms.exception;
+package com.vuebg.generator.exceptions;
 
 /**
  * DAO操作异常
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class DAOException extends Exception {
     

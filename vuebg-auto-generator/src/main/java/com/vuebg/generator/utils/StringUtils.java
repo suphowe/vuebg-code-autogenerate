@@ -1,13 +1,12 @@
-package com.louis.kitty.dbms.utils;
+package com.vuebg.generator.utils;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
  * 字符串工具类
- * 
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class StringUtils {
 

@@ -2,8 +2,8 @@ package com.vuebg.generator.exceptions;
 
 /**
  * 自定义异常
- * @author Louis
- * @date Aug 21, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class VuebgException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

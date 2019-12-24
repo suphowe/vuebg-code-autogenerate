@@ -1,16 +1,17 @@
-package com.louis.kitty.generator.service;
+package com.vuebg.generator.service;
+
+import com.vuebg.generator.model.GenerateModel;
+import com.vuebg.generator.model.Table;
+import com.vuebg.generator.params.ConnParam;
 
 import java.io.IOException;
 import java.util.List;
 
-import com.louis.kitty.dbms.model.Table;
-import com.louis.kitty.dbms.vo.ConnParam;
-import com.louis.kitty.generator.vo.GenerateModel;
 
 /**
  * 代码生成服务
- * @author Louis
- * @date Nov 9, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public interface GenerateService {
 
@@ -30,7 +31,7 @@ public interface GenerateService {
 
 	/**
 	 * 获取代码生成数据模型
-	 * @param tables
+	 * @param generateModel
 	 * @return
 	 */
 	public GenerateModel getGenerateModel(GenerateModel generateModel);

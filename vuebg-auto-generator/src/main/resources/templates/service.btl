@@ -1,13 +1,13 @@
 package ${table.servicePackageName};
 
 import ${table.modelPackageName}.${table.className};
-import com.louis.kitty.core.service.CurdService;
+import com.vuebg.admin.core.service.CurdService;
 
 /**
  * ---------------------------
  * ${table.description} (${table.className}Service)         
  * ---------------------------
- * 作者：  kitty-generator
+ * 作者：  vuebg-auto-generator
  * 时间：  ${strutil.formatDate(date(),'yyyy-MM-dd HH:mm:ss')}
  * 说明：  我是由代码生成器生生成的
  * ---------------------------

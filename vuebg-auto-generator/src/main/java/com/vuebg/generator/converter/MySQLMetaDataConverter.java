@@ -2,18 +2,18 @@ package com.vuebg.generator.converter;
 
 import java.util.Map;
 
-import com.louis.kitty.dbms.dao.IMetaDataConverter;
-import com.louis.kitty.dbms.model.Index;
-import com.louis.kitty.dbms.model.Table;
+import com.vuebg.generator.dao.IMetaDataConverter;
+import com.vuebg.generator.model.Index;
+import com.vuebg.generator.model.Table;
 
 /**
  * 元数据转换器
  * @author suphowe
  * @date 2019-12-23
  */
-public class MySQL5MetaDataConverter extends CommonMetaDataConverter {
+public class MySQLMetaDataConverter extends CommonMetaDataConverter {
 
-    private static IMetaDataConverter instance = new MySQL5MetaDataConverter();
+    private static IMetaDataConverter instance = new MySQLMetaDataConverter();
     
     public static final IMetaDataConverter getInstance() {
         return instance;

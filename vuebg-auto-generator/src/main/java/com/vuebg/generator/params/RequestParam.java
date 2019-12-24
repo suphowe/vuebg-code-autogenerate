@@ -1,9 +1,9 @@
-package com.louis.kitty.dbms.vo;
+package com.vuebg.generator.params;
 
 /**
  * 查询参数封装
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class RequestParam extends ConnParam {
 

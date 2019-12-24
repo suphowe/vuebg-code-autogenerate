@@ -1,27 +1,48 @@
-package com.louis.kitty.generator.config;
+package com.vuebg.generator.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * Swagger配置
- * @author Louis
- * @date Nov 9, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-	
+
 	@Bean
 	public Docket createRestApi() {
-		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.any()).paths(PathSelectors.any()).build();
+		return new Docket(DocumentationType.SWAGGER_2)
+				.apiInfo(apiInfo())
+				.select()
+				.apis(RequestHandlerSelectors.basePackage("com.vuebg.generator.controller"))
+				.paths(PathSelectors.any())
+				.build();
+	}
+
+	/**
+	 * 创建该API的基本信息（这些基本信息会展现在文档页面中）
+	 * 访问地址：http://项目实际地址/swagger-ui.html
+	 * @return
+	 */
+	private ApiInfo apiInfo() {
+		return new ApiInfoBuilder()
+				.title("后台接口")
+				.description("")
+				.termsOfServiceUrl("")
+				.contact("suphowe")
+				.version("1.0")
+				.build();
 	}
 	
 }

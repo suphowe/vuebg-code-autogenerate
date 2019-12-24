@@ -1,9 +1,9 @@
-package com.louis.kitty.generator.utils;
+package com.vuebg.generator.utils;
 
 /**
  * 数据类型工具类
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class DataTypeUtils {
 

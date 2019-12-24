@@ -1,4 +1,4 @@
-package com.louis.kitty.generator.service.impl;
+package com.vuebg.generator.service.impl;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -6,6 +6,12 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.vuebg.generator.model.*;
+import com.vuebg.generator.params.ConnParam;
+import com.vuebg.generator.service.DatabaseService;
+import com.vuebg.generator.service.GenerateService;
+import com.vuebg.generator.utils.DataTypeUtils;
+import com.vuebg.generator.utils.StringUtils;
 import org.beetl.core.Configuration;
 import org.beetl.core.GroupTemplate;
 import org.beetl.core.Template;
@@ -14,22 +20,11 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.louis.kitty.dbms.model.Column;
-import com.louis.kitty.dbms.model.PrimaryKey;
-import com.louis.kitty.dbms.model.Table;
-import com.louis.kitty.dbms.service.DatabaseService;
-import com.louis.kitty.dbms.utils.StringUtils;
-import com.louis.kitty.dbms.vo.ConnParam;
-import com.louis.kitty.generator.service.GenerateService;
-import com.louis.kitty.generator.utils.DataTypeUtils;
-import com.louis.kitty.generator.vo.ColumnModel;
-import com.louis.kitty.generator.vo.GenerateModel;
-import com.louis.kitty.generator.vo.TableModel;
 
 /**
  * 代码生成服务实现
- * @author Louis
- * @date Nov 9, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 @Service
 public class GenerateServiceImpl implements GenerateService {
@@ -170,8 +165,6 @@ public class GenerateServiceImpl implements GenerateService {
 	 * @param groupTemplate
 	 * @param tableModel
 	 * @param templatePath
-	 * @param basePackage
-	 * @param subPackageName
 	 * @param outPutFolderPath
 	 * @throws  
 	 * @throws Exception 

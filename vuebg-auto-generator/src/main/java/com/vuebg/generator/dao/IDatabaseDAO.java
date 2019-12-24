@@ -1,21 +1,17 @@
-package com.louis.kitty.dbms.dao;
+package com.vuebg.generator.dao;
+
+import com.vuebg.generator.exceptions.DAOException;
+import com.vuebg.generator.model.*;
 
 import java.sql.Connection;
 import java.util.List;
 import java.util.Map;
 
-import com.louis.kitty.dbms.exception.DAOException;
-import com.louis.kitty.dbms.model.Column;
-import com.louis.kitty.dbms.model.ForeignKey;
-import com.louis.kitty.dbms.model.Index;
-import com.louis.kitty.dbms.model.PrimaryKey;
-import com.louis.kitty.dbms.model.Table;
-import com.louis.kitty.dbms.model.Trigger;
 
 /**
  * 数据库元信息查询接口
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public interface IDatabaseDAO {
 	
@@ -70,7 +66,7 @@ public interface IDatabaseDAO {
      * 查询触发器集
      * @param tableName
      * @return
-     * @throws DAOExeception
+	 * @throws DAOException
      */
 	List<Trigger> getTriggers(String tableName) throws DAOException;
 	

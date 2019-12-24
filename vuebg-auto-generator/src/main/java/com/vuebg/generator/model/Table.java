@@ -1,12 +1,12 @@
-package com.louis.kitty.dbms.model;
+package com.vuebg.generator.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * 数据表
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class Table {
 

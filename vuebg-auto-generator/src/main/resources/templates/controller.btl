@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.louis.kitty.core.http.HttpResult;
-import com.louis.kitty.core.page.PageRequest;
+import com.vuebg.admin.core.http.HttpResult;
+import com.vuebg.admin.core.page.PageRequest;
 
 import ${table.modelPackageName}.${table.className};
 import ${table.servicePackageName}.${table.className}Service;
@@ -20,7 +20,7 @@ import ${table.servicePackageName}.${table.className}Service;
  * ---------------------------
  * ${table.description} (${table.className}Controller)         
  * ---------------------------
- * 作者：  kitty-generator
+ * 作者：  vuebg-auto-generator
  * 时间：  ${strutil.formatDate(date(),'yyyy-MM-dd HH:mm:ss')}
  * 说明：  我是由代码生成器生生成的
  * ---------------------------

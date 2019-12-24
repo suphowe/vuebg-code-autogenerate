@@ -1,22 +1,17 @@
-package com.louis.kitty.dbms.service.impl;
+package com.vuebg.generator.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.vuebg.generator.dao.DatabaseDAOFactory;
+import com.vuebg.generator.dao.IDatabaseDAO;
+import com.vuebg.generator.exceptions.DAOException;
+import com.vuebg.generator.model.*;
+import com.vuebg.generator.params.ConnParam;
+import com.vuebg.generator.service.DatabaseService;
 import org.springframework.stereotype.Component;
 
-import com.louis.kitty.dbms.dao.DatabaseDAOFactory;
-import com.louis.kitty.dbms.dao.IDatabaseDAO;
-import com.louis.kitty.dbms.exception.DAOException;
-import com.louis.kitty.dbms.model.Column;
-import com.louis.kitty.dbms.model.ForeignKey;
-import com.louis.kitty.dbms.model.Index;
-import com.louis.kitty.dbms.model.PrimaryKey;
-import com.louis.kitty.dbms.model.Table;
-import com.louis.kitty.dbms.model.Trigger;
-import com.louis.kitty.dbms.service.DatabaseService;
-import com.louis.kitty.dbms.vo.ConnParam;
 /**
  * 数据库元信息查询服务实现类
  * @author Louis

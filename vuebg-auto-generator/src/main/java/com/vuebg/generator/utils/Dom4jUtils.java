@@ -1,4 +1,4 @@
-package com.louis.kitty.dbms.utils;
+package com.vuebg.generator.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.vuebg.generator.constants.CommonConstants;
 import org.dom4j.Document;
 import org.dom4j.DocumentFactory;
 import org.dom4j.Namespace;
@@ -18,12 +19,11 @@ import org.dom4j.io.OutputFormat;
 import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
 
-import com.louis.kitty.dbms.constants.CommonConstants;
 
 /**
  * DOM4J解析框架相关操作方法
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class Dom4jUtils {
 

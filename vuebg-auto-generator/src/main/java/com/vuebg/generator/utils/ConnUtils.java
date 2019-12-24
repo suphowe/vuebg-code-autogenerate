@@ -1,14 +1,15 @@
-package com.louis.kitty.dbms.utils;
+package com.vuebg.generator.utils;
 
-import com.louis.kitty.dbms.dao.DatabaseDAOFactory;
-import com.louis.kitty.dbms.dao.IDatabaseDAO;
-import com.louis.kitty.dbms.exception.DAOException;
-import com.louis.kitty.dbms.vo.ConnParam;
+
+import com.vuebg.generator.dao.DatabaseDAOFactory;
+import com.vuebg.generator.dao.IDatabaseDAO;
+import com.vuebg.generator.exceptions.DAOException;
+import com.vuebg.generator.params.ConnParam;
 
 /**
  * 连接工具类
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class ConnUtils {
 

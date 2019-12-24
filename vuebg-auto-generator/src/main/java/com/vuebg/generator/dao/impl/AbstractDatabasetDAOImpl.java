@@ -1,4 +1,4 @@
-package com.louis.kitty.dbms.dao.impl;
+package com.vuebg.generator.dao.impl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,22 +14,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import com.louis.kitty.dbms.dao.IDatabaseDAO;
-import com.louis.kitty.dbms.dao.IMetaDataConverter;
-import com.louis.kitty.dbms.exception.DAOException;
-import com.louis.kitty.dbms.exception.QueryDAOException;
-import com.louis.kitty.dbms.model.Column;
-import com.louis.kitty.dbms.model.ForeignKey;
-import com.louis.kitty.dbms.model.Index;
-import com.louis.kitty.dbms.model.PrimaryKey;
-import com.louis.kitty.dbms.model.Table;
-import com.louis.kitty.dbms.model.Trigger;
-import com.louis.kitty.dbms.vo.ConnParam;
+import com.vuebg.generator.dao.IDatabaseDAO;
+import com.vuebg.generator.dao.IMetaDataConverter;
+import com.vuebg.generator.exceptions.DAOException;
+import com.vuebg.generator.exceptions.QueryDAOException;
+import com.vuebg.generator.model.*;
+import com.vuebg.generator.params.ConnParam;
 
 /**
  * 抽象数据库元信息查询类
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public abstract class AbstractDatabasetDAOImpl implements IDatabaseDAO {
 
@@ -52,8 +47,7 @@ public abstract class AbstractDatabasetDAOImpl implements IDatabaseDAO {
 	}
 
 	@Override
-	public List<Map<String, String>> query(String sql, String[] params)
-			throws DAOException {
+	public List<Map<String, String>> query(String sql, String[] params) throws DAOException {
 		if (sql == null) {
 			Exception e = new IllegalArgumentException("输入的sql查询语句为空！");
 			throw new DAOException(DAOException.QUERY_EXCEPTION, e.getMessage(), e);

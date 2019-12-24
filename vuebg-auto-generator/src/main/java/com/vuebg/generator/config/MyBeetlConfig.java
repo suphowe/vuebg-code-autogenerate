@@ -1,4 +1,4 @@
-package com.louis.kitty.generator.config;
+package com.vuebg.generator.config;
 
 import org.beetl.core.GroupTemplate;
 import org.springframework.context.annotation.Bean;

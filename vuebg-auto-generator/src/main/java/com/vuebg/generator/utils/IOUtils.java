@@ -1,12 +1,12 @@
-package com.louis.kitty.common.utils;
+package com.vuebg.generator.utils;
 
 import java.io.Closeable;
 import java.io.IOException;
 
 /**
  * IO相关工具类
- * @author Louis
- * @date Oct 29, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class IOUtils {
 

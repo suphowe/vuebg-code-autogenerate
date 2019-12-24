@@ -1,9 +1,9 @@
-package com.louis.kitty.generator.vo;
+package com.vuebg.generator.model;
 
 /**
  * 代码生成模型-字段
- * @author Louis
- * @date Nov 10, 2018
+ * @author suphowe
+ * @date 2019-12-23
  */
 public class ColumnModel {
 
