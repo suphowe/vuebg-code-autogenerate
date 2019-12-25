@@ -1,15 +1,15 @@
-package com.louis.kitty.generator.controller;
+package com.vuebg.generator.controller;
 
+import com.vuebg.generator.constants.HttpResult;
+import com.vuebg.generator.model.GenerateModel;
+import com.vuebg.generator.params.ConnParam;
+import com.vuebg.generator.service.GenerateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.louis.kitty.core.http.HttpResult;
-import com.louis.kitty.dbms.vo.ConnParam;
-import com.louis.kitty.generator.service.GenerateService;
-import com.louis.kitty.generator.vo.GenerateModel;
 
 /**
  * 代码生成控制器
@@ -22,7 +22,12 @@ public class GenerateController {
 
 	@Autowired
 	GenerateService generatorService;
-	
+
+	/**
+	 * 测试链接
+	 * @param connParam
+	 * @return
+	 */
 	@PostMapping("/testConnection")
 	public HttpResult testConnection(@RequestBody ConnParam connParam) {
 		boolean success = generatorService.testConnection(connParam);
@@ -32,11 +37,16 @@ public class GenerateController {
 		return HttpResult.error("连接失败,请检查数据库及连接。");
 	}
 
+	/**
+	 * 获取所有的表
+	 * @param connParam
+	 * @return
+	 */
 	@PostMapping("/getTables")
 	public HttpResult getTables(@RequestBody ConnParam connParam) {
 		return HttpResult.ok(generatorService.getTables(connParam));
 	}
-	
+
 	@PostMapping("/getGenerateModel")
 	public HttpResult getGenerateModel(@RequestBody GenerateModel generateModel) {
 		return HttpResult.ok(generatorService.getGenerateModel(generateModel));
